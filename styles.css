@@ -1,0 +1,312 @@
+:root {
+  color: #172033;
+  background: #f7f3ea;
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Noto Sans KR", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --ink: #172033;
+  --plum: #6f315f;
+  --teal: #1f817b;
+  --gold: #b47721;
+  --coral: #c85c45;
+  --paper: #fffdfa;
+  --line: rgba(23, 32, 51, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #f7f3ea;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--ink);
+  letter-spacing: 0;
+  line-height: 1.12;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  min-height: 86svh;
+  overflow: hidden;
+  color: #ffffff;
+  background: var(--ink);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(16, 21, 34, 0.94), rgba(65, 39, 70, 0.76) 46%, rgba(20, 28, 43, 0.26)),
+    url("assets/cncbook-cover.jpg") center right 18% / cover no-repeat;
+}
+
+.topbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 22px 0;
+}
+
+.brand {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.topbar div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
+}
+
+.topbar a:not(.brand) {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 0 0 12svh;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 950;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 760px;
+  color: #ffffff;
+  font-size: clamp(3rem, 8vw, 6.4rem);
+  word-break: keep-all;
+}
+
+.subtitle {
+  max-width: 780px;
+  margin-top: 18px;
+  color: #f5e0ff;
+  font-size: clamp(1.15rem, 2.5vw, 1.75rem);
+  font-weight: 850;
+  word-break: keep-all;
+}
+
+.lead {
+  max-width: 650px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.primary {
+  color: var(--ink);
+  background: #ffffff;
+}
+
+.secondary {
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.info-band,
+.rights-band {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 76px 0;
+}
+
+.info-band {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.book-cover img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 26px 70px rgba(23, 32, 51, 0.24);
+}
+
+.book-info h2,
+.rights-band h2 {
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  word-break: keep-all;
+}
+
+.book-info p,
+.rights-band p {
+  max-width: 780px;
+  margin-top: 22px;
+  color: #3d4a60;
+  font-size: 1rem;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 30px 0 0;
+}
+
+dl div {
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+dt {
+  color: var(--teal);
+  font-size: 0.83rem;
+  font-weight: 950;
+}
+
+dd {
+  margin: 9px 0 0;
+  color: var(--ink);
+  font-size: 1.02rem;
+  font-weight: 850;
+  word-break: keep-all;
+}
+
+.rights-band {
+  border-top: 1px solid var(--line);
+}
+
+.rights-band .eyebrow {
+  color: var(--coral);
+}
+
+.rights-band ul {
+  display: grid;
+  gap: 10px;
+  max-width: 880px;
+  margin: 28px 0 0;
+  padding-left: 20px;
+  color: #2f3e56;
+  line-height: 1.75;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 42px;
+  border-top: 1px solid var(--line);
+  color: #58677f;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 82svh;
+  }
+
+  .hero-bg {
+    background:
+      linear-gradient(180deg, rgba(16, 21, 34, 0.9), rgba(65, 39, 70, 0.72) 56%, rgba(16, 21, 34, 0.54)),
+      url("assets/cncbook-cover.jpg") center top / cover no-repeat;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .topbar div {
+    gap: 8px 12px;
+  }
+
+  .hero-content {
+    padding-bottom: 9svh;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.65rem, 18vw, 4.4rem);
+  }
+
+  .info-band {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-top: 52px;
+  }
+
+  .book-cover {
+    max-width: 280px;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+  }
+}
