@@ -1,0 +1,210 @@
+project:
+  title: "Codex, 니 이름은 이제부터 춘식이여"
+  subtitle: "침대에 누워 딸깍, “해줘”로 시작한 개인 AI 운영체계"
+  source_dir: "CNC_gpt/manuscript"
+  image_dir: "CNC_gpt/image"
+  cover_image: "CNC_gpt/codex_choonsik_cover_text_ni.png"
+  optimize_images: true
+  optimized_image_dir: "output/cncbook_images"
+  optimized_image_max_px: 1600
+  optimized_image_quality: 82
+  manuscript_dir: "cnc_book_manuscript"
+  brunch_dir: "brunch/posts"
+  output_markdown: "output/CNCbook.md"
+
+defaults:
+  magazine: "Codex, 니 이름은 이제부터 춘식이여"
+  status: "draft"
+  upload_memo: "브런치 업로드 전 제목, 부제, 이미지, 개인정보를 최종 확인할 것."
+  remove_sections:
+    - "이 문서의 목적"
+
+chapters:
+  - order: 1
+    part: "프롤로그"
+    source_file: "00_침대에 누워 딸깍, \"해줘\"라고 말하고 싶었다.md"
+    title: "침대에 누워 딸깍, “해줘”라고 말하고 싶었다"
+    brunch_title: "침대에 누워 딸깍, “해줘”라고 말하고 싶었다"
+    subtitle: "AI workflow의 출발점은 게으름이 아니라 반복 작업을 줄이고 싶은 욕구다"
+    needs_image: false
+    needs_review: true
+
+  - order: 2
+    part: "Part 1. 춘식이를 온보딩하다"
+    source_file: "01_Codex, 니 이름은 이제부터 춘식이여.md"
+    title: "Codex, 니 이름은 이제부터 춘식이여"
+    brunch_title: "Codex, 니 이름은 이제부터 춘식이여"
+    subtitle: "AI를 도구가 아니라 작업 세계 안의 구성원으로 온보딩하는 순간"
+    needs_image: false
+    needs_review: true
+
+  - order: 3
+    part: "Part 2. AI에게 일을 시키는 법"
+    source_file: "02_AI에게 일을 맡긴다는 건, 좋은 상사가 되는 일이다.md"
+    title: "AI에게 일을 맡긴다는 건, 좋은 상사가 되는 일이다"
+    brunch_title: "AI에게 일을 맡긴다는 건, 좋은 상사가 되는 일이다"
+    subtitle: "AI 활용 능력은 프롬프트 암기가 아니라 업무 지시 능력이다"
+    needs_image: false
+    needs_review: true
+
+  - order: 4
+    part: "Part 2. AI에게 일을 시키는 법"
+    source_file: "03_프롬프트는 주문이 아니라 업무 명세서다.md"
+    title: "프롬프트는 주문이 아니라 업무 명세서다"
+    brunch_title: "프롬프트는 주문이 아니라 업무 명세서다"
+    subtitle: "좋은 프롬프트는 작업 조건을 명확히 정의하는 specification이다"
+    needs_image: false
+    needs_review: true
+
+  - order: 5
+    part: "Part 2. AI에게 일을 시키는 법"
+    source_file: "04_AI는 평균적 작업자다.md"
+    title: "AI는 평균적 작업자다"
+    brunch_title: "AI는 평균적 작업자다"
+    subtitle: "AI는 평균 산출물을 빠르게 만들지만 좌표계 없이는 평균에 머문다"
+    needs_image: false
+    needs_review: true
+
+  - order: 6
+    part: "Part 2. AI에게 일을 시키는 법"
+    source_file: "05_ChatGPT는 편집장, Codex는 시공팀.md"
+    title: "ChatGPT는 편집장, Codex는 시공팀"
+    brunch_title: "ChatGPT는 편집장, Codex는 시공팀"
+    subtitle: "모델은 순위가 아니라 역할로 배치해야 한다"
+    needs_image: false
+    needs_review: true
+
+  - order: 7
+    part: "Part 2. AI에게 일을 시키는 법"
+    source_file: "06_긴 작업은 프롬프트보다 파이프라인이 먼저다.md"
+    title: "긴 작업은 프롬프트보다 파이프라인이 먼저다"
+    brunch_title: "긴 작업은 프롬프트보다 파이프라인이 먼저다"
+    subtitle: "긴 작업은 한 번에 시키는 것이 아니라 입력과 출력을 나눠 설계해야 한다"
+    needs_image: false
+    needs_review: true
+
+  - order: 8
+    part: "Part 3. 개인 AI 운영체계"
+    source_file: "07_AI 대화는 Inbox다.md"
+    title: "AI 대화는 Inbox다"
+    brunch_title: "AI 대화는 Inbox다"
+    subtitle: "AI 대화는 생각을 임시로 받아주는 inbox지만, inbox에만 쌓이면 안 된다"
+    needs_image: false
+    needs_review: true
+
+  - order: 9
+    part: "Part 3. 개인 AI 운영체계"
+    source_file: "08_AI 대화는 Distiller다.md"
+    title: "AI 대화는 Distiller다"
+    brunch_title: "AI 대화는 Distiller다"
+    subtitle: "AI는 흩어진 감각과 생각을 문서화 가능한 개념으로 증류한다"
+    needs_image: false
+    needs_review: true
+
+  - order: 10
+    part: "Part 3. 개인 AI 운영체계"
+    source_file: "09_Markdown으로 남기지 않으면 고급 수다로 끝난다.md"
+    title: "Markdown으로 남기지 않으면 고급 수다로 끝난다"
+    brunch_title: "Markdown으로 남기지 않으면 고급 수다로 끝난다"
+    subtitle: "AI 대화에서 얻은 통찰은 문서로 남겨야 사고 자산이 된다"
+    needs_image: false
+    needs_review: true
+
+  - order: 11
+    part: "Part 3. 개인 AI 운영체계"
+    source_file: "10_lessons.md, 경험을 재사용 가능한 원칙으로 바꾸기.md"
+    title: "lessons.md: 경험을 재사용 가능한 원칙으로 바꾸기"
+    brunch_title: "lessons.md: 경험을 재사용 가능한 원칙으로 바꾸기"
+    subtitle: "경험은 lesson으로 만들 때 다음 행동을 바꾸는 자산이 된다"
+    needs_image: false
+    needs_review: true
+
+  - order: 12
+    part: "Part 3. 개인 AI 운영체계"
+    source_file: "11_Active Package와 Cold Storage.md"
+    title: "Active Package와 Cold Storage"
+    brunch_title: "Active Package와 Cold Storage"
+    subtitle: "아이디어는 버리지 않아도 되지만 전부 지금 실행하면 안 된다"
+    needs_image: false
+    needs_review: true
+
+  - order: 13
+    part: "Part 4. 업무를 재배치하다"
+    source_file: "12_AI 업무 재배치 모델.md"
+    title: "나는 OCR을 했고, 왕조교는 분류했고, 원장은 판단했다"
+    brunch_title: "나는 OCR을 했고, 왕조교는 분류했고, 원장은 판단했다"
+    subtitle: "교재 제작 경험으로 보는 AI 시대의 업무 재배치"
+    needs_image: false
+    needs_review: true
+
+  - order: 14
+    part: "Part 4. 업무를 재배치하다"
+    source_file: "14_LLM은 Universal Adapter다.md"
+    title: "LLM은 왕이 아니라 Adapter다"
+    brunch_title: "LLM은 왕이 아니라 Adapter다"
+    subtitle: "LLM은 글쓰기 도구를 넘어 형식과 의미를 연결하는 adapter다"
+    needs_image: false
+    needs_review: true
+
+  - order: 15
+    part: "Part 4. 업무를 재배치하다"
+    source_file: "15_Raw Layer를 읽지 않는 시대.md"
+    title: "Raw Layer를 읽지 않는 시대"
+    brunch_title: "Raw Layer를 읽지 않는 시대"
+    subtitle: "사람은 raw layer 전체를 직접 읽는 존재에서 meaning evaluator로 이동한다"
+    needs_image: false
+    needs_review: true
+
+  - order: 16
+    part: "Part 5. 자동화의 경계선"
+    source_file: "16_자동화의 핵심은 자동화하지 않을 것을 정하는 일이다.md"
+    title: "자동화의 핵심은 자동화하지 않을 것을 정하는 일이다"
+    brunch_title: "자동화의 핵심은 자동화하지 않을 것을 정하는 일이다"
+    subtitle: "자동화는 속도를 주지만 책임을 없애지 않는다"
+    needs_image: false
+    needs_review: true
+
+  - order: 17
+    part: "Part 5. 자동화의 경계선"
+    source_file: "17_Human-in-the-loop는 장식이 아니다.md"
+    title: "Human-in-the-loop는 장식이 아니다"
+    brunch_title: "Human-in-the-loop는 장식이 아니다"
+    subtitle: "사람의 개입 지점은 workflow 안에 명시되어야 한다"
+    needs_image: false
+    needs_review: true
+
+  - order: 18
+    part: "Part 6. 평균 밖의 인간"
+    source_file: "18_Neurodivergent 사고는 평균 밖의 안테나다.md"
+    title: "Neurodivergent 사고는 평균 밖의 안테나다"
+    brunch_title: "Neurodivergent 사고는 평균 밖의 안테나다"
+    subtitle: "AI가 평균을 싸게 만들수록 평균 밖의 질문이 중요해진다"
+    needs_image: false
+    needs_review: true
+
+  - order: 19
+    part: "Part 6. 평균 밖의 인간"
+    source_file: "19_발산은 AI에게, 실행은 좁힌다.md"
+    title: "발산은 AI에게, 실행은 좁힌다"
+    brunch_title: "발산은 AI에게, 실행은 좁힌다"
+    subtitle: "AI는 발산을 증폭하지만, 실행 범위는 사람이 좁혀야 한다"
+    needs_image: false
+    needs_review: true
+
+  - order: 20
+    part: "Part 6. 평균 밖의 인간"
+    source_file: "20_AI 시대의 의사, 판단보다 책임이 남는다.md"
+    title: "AI 시대의 의사: 판단보다 책임이 남는다"
+    brunch_title: "AI 시대의 의사: 판단보다 책임이 남는다"
+    subtitle: "AI가 판단 후보를 잘 만들수록 의사에게 남는 것은 설명과 책임이다"
+    needs_image: false
+    needs_review: true
+
+  - order: 21
+    part: "에필로그"
+    source_file: "21_춘식이는 귀엽지만, 버튼은 내가 누른다.md"
+    title: "춘식이는 귀엽지만, 버튼은 내가 누른다"
+    brunch_title: "춘식이는 귀엽지만, 버튼은 내가 누른다"
+    subtitle: "실행은 위임할 수 있어도 마지막 버튼은 사람이 누른다"
+    needs_image: false
+    needs_review: true
