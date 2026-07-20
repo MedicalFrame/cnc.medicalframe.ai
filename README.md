@@ -32,10 +32,12 @@ python3 -m http.server 4174
 
 ## Deployment
 
-- Target domain: `cnc.medicalframe.ai`
-- GitHub Pages custom domain file: `CNAME`
-- PDF asset: `downloads/CNCbook.pdf`
-- Cover asset: `assets/cncbook-cover.jpg`
-- Book source and generated manuscript: `book/`
+- 공개 도메인: `cnc.medicalframe.ai`
+- 호스팅: Cloudflare Pages 프로젝트 `cnc-medicalframe-ai`
+- 저장소: `MedicalFrame/cnc.medicalframe.ai` (`main`)
+- 배포 방식: Wrangler로 정적 산출물 수동 업로드
+- 공개 PDF: `downloads/CNCbook.pdf`
+- 공개 표지: `assets/cncbook-cover.jpg`
+- 책 원천과 생성 원고: `book/`
 
-See `DEPLOYMENT.md` for DNS instructions.
+정확한 스테이징, 배포, 검증 명령은 `DEPLOYMENT.md`를 참고합니다.
