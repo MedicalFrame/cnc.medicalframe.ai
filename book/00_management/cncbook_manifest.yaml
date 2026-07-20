@@ -6,7 +6,7 @@ project:
   cover_image: "CNC_gpt/codex_choonsik_cover_text_ni.png"
   optimize_images: true
   optimized_image_dir: "output/cncbook_images"
-  optimized_image_max_px: 1600
+  optimized_image_max_px: 1500
   optimized_image_quality: 82
   manuscript_dir: "cnc_book_manuscript"
   brunch_dir: "brunch/posts"
