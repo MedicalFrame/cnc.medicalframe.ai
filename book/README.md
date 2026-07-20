@@ -27,7 +27,14 @@ bash 00_management/scripts/build_cncbook_outputs.sh
 
 `build_cncbook.py build`는 통합 원고와 브런치 복붙용 파일을 생성합니다.
 
-`build_cncbook_outputs.sh`는 통합 원고를 바탕으로 `DOCX / EPUB / PDF`를 생성합니다. PDF는 기본적으로 XeLaTeX와 KoPubWorld 폰트로 A5 판형에 맞춰 생성합니다. Word PDF 내보내기를 쓰고 싶으면 `--word-pdf` 옵션을 사용할 수 있습니다.
+`build_cncbook_outputs.sh`는 통합 원고를 바탕으로 `DOCX / EPUB / PDF`를 생성합니다. PDF는 XeLaTeX로 A5 판형에 맞춰 생성하며, KoPubWorld TTF 폴더가 있으면 아래처럼 지정할 수 있습니다.
+
+```bash
+CNCBOOK_FONT_DIR=/absolute/path/to/KOPUBWORLD_TTF_FONTS2026 \
+  bash 00_management/scripts/build_cncbook_outputs.sh
+```
+
+KoPubWorld TTF를 찾지 못하면 macOS 기본 AppleGothic으로 안전하게 대체합니다. Word PDF 내보내기를 쓰고 싶으면 `--word-pdf` 옵션을 사용할 수 있습니다.
 
 ## 현재 원고 상태
 

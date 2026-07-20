@@ -58,7 +58,7 @@ AI는 또 그럴듯하게 정리해준다.
 
 하지만 자산은 남지 않았다.
 
-\newpage
+---
 
 AI와 대화만 하고 끝내면 고급 수다다.
 
@@ -101,7 +101,7 @@ workflow로 바꿀 수 있다.
 
 이 둘은 역할이 다르다.
 
-\newpage
+---
 
 앞 글에서 AI 대화는 distiller라고 했다.
 
@@ -121,6 +121,10 @@ Obsidian을 써야만 한다는 뜻도 아니다.
 
 나는 markdown을 쓴다.
 
+![](../output/cncbook_images/CNC_gpt_image_09_1_28d431e395.jpg)
+
+_Markdown으로 남기지 않으면 고급 수다로 끝난다의 문제의식이 처음 모습을 드러내는 장면._
+
 가볍고, 오래가고, 검색되고, 링크를 걸기 좋고, Git으로 관리하기 쉽고, AI와 주고받기도 편하기 때문이다.
 
 하지만 핵심은 앱이 아니다.
@@ -131,11 +135,7 @@ Obsidian을 써야만 한다는 뜻도 아니다.
 
 문서 속 문장은 다시 호출된다.
 
-![](../output/cncbook_images/CNC_gpt_image_09_1_28d431e395.jpg)
-
-_Markdown으로 남기지 않으면 고급 수다로 끝난다의 문제의식이 처음 모습을 드러내는 장면._
-
-\newpage
+---
 
 예를 들어 “AI는 평균적 작업자다”라는 생각도 처음부터 문서가 아니었다.
 
@@ -187,7 +187,7 @@ Codex에게 줄 시방서의 일부가 된다.
 
 문서가 되면 생각은 작업 단위가 된다.
 
-\newpage
+---
 
 연구 아이디어도 마찬가지다.
 
@@ -234,11 +234,15 @@ feasibility issue.
 
 문서가 있으면 다음 action으로 이어진다.
 
-\newpage
+---
 
 인간관계 lesson도 그렇다.
 
 어떤 상황에서 상대가 방어적으로 반응했다.
+
+![](../output/cncbook_images/CNC_gpt_image_09_2_43184f180d.jpg)
+
+_작업의 흐름이 구체적인 구조로 바뀌는 순간._
 
 처음에는 감정이다.
 
@@ -288,11 +292,7 @@ prompt도 만든다.
 
 이게 문서화의 힘이다.
 
-![](../output/cncbook_images/CNC_gpt_image_09_2_43184f180d.jpg)
-
-_작업의 흐름이 구체적인 구조로 바뀌는 순간._
-
-\newpage
+---
 
 나는 `lessons.md`를 이런 용도로 본다.
 
@@ -332,7 +332,7 @@ workflow나 tool로 만들 수 있는가.
 
 이렇게 쓰면 경험이 판단 자산이 된다.
 
-\newpage
+---
 
 물론 모든 대화를 markdown으로 남길 필요는 없다.
 
@@ -364,9 +364,13 @@ workflow나 tool로 만들 수 있는가.
 
 `lessons.md`는 쓰레기통이 아니다.
 
+![](../output/cncbook_images/CNC_gpt_image_09_3_e6ef272480.jpg)
+
+_사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
+
 재사용 가능한 판단 자산을 모으는 곳이다.
 
-\newpage
+---
 
 Markdown으로 남긴다는 것은 생각을 얼려버린다는 뜻이 아니다.
 
@@ -405,11 +409,7 @@ workflow가 생기면 연결한다.
 
 생각을 업데이트 가능한 형태로 만드는 일이다.
 
-![](../output/cncbook_images/CNC_gpt_image_09_3_e6ef272480.jpg)
-
-_사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
-
-\newpage
+---
 
 문서가 되면 생각은 서로 연결된다.
 
@@ -438,7 +438,7 @@ workflow가 나중에 tool이 될 수 있다.
 
 문서는 시스템의 부품이다.
 
-\newpage
+---
 
 이 차이는 AI 시대에 더 중요해진다.
 
@@ -468,7 +468,7 @@ cold storage인가?
 
 역할이 생기면 다시 쓸 수 있다.
 
-\newpage
+---
 
 나는 이 흐름을 개인 지식 운영체계의 핵심으로 본다.
 
@@ -479,6 +479,10 @@ cold storage인가?
 AI가 그 안에서 패턴과 문장을 뽑아준다.
 
 그중 중요한 것을 markdown으로 남긴다.
+
+![](../output/cncbook_images/CNC_gpt_image_09_4_1f0ffcf86e.jpg)
+
+_Markdown으로 남기지 않으면 고급 수다로 끝난다의 결론을 이미지로 정리한 장면._
 
 그 문서는 lesson이 된다.
 lesson은 rule로 압축된다.
@@ -515,11 +519,7 @@ AI도 읽고,
 
 그래서 좋다.
 
-![](../output/cncbook_images/CNC_gpt_image_09_4_1f0ffcf86e.jpg)
-
-_Markdown으로 남기지 않으면 고급 수다로 끝난다의 결론을 이미지로 정리한 장면._
-
-\newpage
+---
 
 결국 중요한 것은 Obsidian이 아니다.
 
@@ -540,7 +540,7 @@ AI 대화에서 나온 통찰을 대화 상태로 방치하지 않는 것.
 
 도구가 아니라 흐름이 중요하다.
 
-\newpage
+---
 
 AI와 대화하면 똑똑해진 느낌이 든다.
 
@@ -572,7 +572,7 @@ AI는 내가 한 말을 정리해주고,
 
 내 경우 그 병이 markdown이다.
 
-\newpage
+---
 
 AI와 대화만 하고 끝내면 고급 수다다.
 

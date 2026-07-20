@@ -39,7 +39,7 @@
 
 그 중간에 필요한 파일이 내게는 `lessons.md`다.
 
-
+---
 
 `lessons.md`는 일기가 아니다.
 
@@ -71,7 +71,7 @@ AI에게 이 원칙을 실행시키려면 어떤 prompt가 필요한가.
 
 둘은 다르다.
 
-
+---
 
 예를 들어 조별 운영 상황이 있었다고 하자.
 
@@ -139,13 +139,13 @@ Reusable prompt:
 
 이렇게 쓰면 달라진다.
 
-한 번의 짜증나는 경험이 다음 메시지를 바꾸는 도구가 된다.
-
 ![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_1_0b47610b12.jpg)
 
 _lessons.md: 경험을 재사용 가능한 원칙으로 바꾸기의 문제의식이 처음 모습을 드러내는 장면._
 
+한 번의 짜증나는 경험이 다음 메시지를 바꾸는 도구가 된다.
 
+---
 
 이것이 Wisdom Compiler다.
 
@@ -194,7 +194,7 @@ IRB 문서에는 대상자, 수집 변수, 개인정보 보호, 동의면제 사
 
 `lessons.md`는 그 compiler의 핵심 파일이다.
 
-
+---
 
 좋은 lesson은 명언이 아니다.
 
@@ -230,7 +230,7 @@ lesson의 목적은 멋진 말이 아니다.
 
 다음 행동을 바꾸는 것이다.
 
-
+---
 
 연구에서도 마찬가지다.
 
@@ -269,6 +269,10 @@ Insight:
 연구는 아이디어의 참신함만으로 되는 것이 아니다.
 검증 가능한 질문, 확보 가능한 데이터, 임상적으로 의미 있는 endpoint가 필요하다.
 
+![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_2_ad122ce4e2.jpg)
+
+_작업의 흐름이 구체적인 구조로 바뀌는 순간._
+
 Rule:
 
 새 연구 아이디어는 data source, primary endpoint, required variables, retrospective feasibility로 먼저 점검한다.
@@ -294,11 +298,7 @@ research question, primary endpoint, data source, required variables, likely lim
 
 이렇게 되면 한 번의 교수님 피드백이 다음 연구 아이디어를 검토하는 도구가 된다.
 
-![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_2_ad122ce4e2.jpg)
-
-_작업의 흐름이 구체적인 구조로 바뀌는 순간._
-
-
+---
 
 AI가 헛짓한 경험도 lesson이 된다.
 
@@ -409,11 +409,15 @@ Codex에게 줄 300줄짜리 프롬프트의 일부가 된다.
 
 이게 `lessons.md`의 힘이다.
 
+![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_3_8f757ff5db.jpg)
+
+_사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
+
 AI 실패도 버리지 않는다.
 
 AI 실패는 다음 instruction을 만드는 재료다.
 
-
+---
 
 `lessons.md`가 강력한 이유는 prompt로 이어지기 때문이다.
 
@@ -446,11 +450,7 @@ AI 실패는 다음 instruction을 만드는 재료다.
 
 `lessons.md`는 원칙을 저장하고, `prompts.md`는 그 원칙을 실행시킨다.
 
-![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_3_8f757ff5db.jpg)
-
-_사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
-
-
+---
 
 lesson이 반복되면 workflow가 된다.
 
@@ -491,7 +491,7 @@ EMR note를 넣으면 research variable 후보를 뽑는 prompt나 script를 만
 
 경험이 도구로 변하는 과정이다.
 
-
+---
 
 하지만 lesson을 만들 때 조심해야 할 것도 있다.
 
@@ -537,9 +537,13 @@ EMR note를 넣으면 research variable 후보를 뽑는 prompt나 script를 만
 다음에 prompt나 workflow로 바꿀 수 있는 원칙.
 인간관계, 연구, 의료, 개발, 팀 운영에서 다시 중요해질 판단.
 
+![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_8ae6d21d77.jpg)
+
+_lessons.md: 경험을 재사용 가능한 원칙으로 바꾸기의 결론을 이미지로 정리한 장면._
+
 이런 것만 남겨도 충분하다.
 
-
+---
 
 좋은 lesson은 업데이트된다.
 
@@ -579,11 +583,7 @@ lesson은 나를 가두는 규칙이 아니다.
 
 다음 판단을 돕는 업데이트 가능한 모델이다.
 
-![](../../output/cncbook_images/CNC_gpt_image_10_Pasted_Image_8ae6d21d77.jpg)
-
-_lessons.md: 경험을 재사용 가능한 원칙으로 바꾸기의 결론을 이미지로 정리한 장면._
-
-
+---
 
 AI는 이 과정을 도울 수 있다.
 
@@ -612,7 +612,7 @@ AI는 compiler를 도와준다.
 
 최종 merge는 사람이 한다.
 
-
+---
 
 `lessons.md`의 최종 목적은 똑똑한 말을 모으는 것이 아니다.
 
@@ -636,7 +636,7 @@ active package와 cold storage를 나누는 것.
 과거의 나에게 배운 것을 현재의 내가 다시 쓸 수 있게 한다.
 현재의 경험을 미래의 나에게 넘겨준다.
 
-
+---
 
 경험은 그냥 쌓인다고 지혜가 되지 않는다.
 

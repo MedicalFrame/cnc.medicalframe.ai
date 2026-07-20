@@ -57,7 +57,7 @@ AI가 엉뚱한 파일을 찍은 것은 아닌지.
 
 AI가 raw layer에서 1차 의미를 뽑아주면, 나는 그 의미를 평가하는 사람이 된다.
 
-\newpage
+---
 
 앞 글에서 LLM은 universal adapter라고 했다.
 
@@ -95,7 +95,7 @@ AI가 짠 코드는 내가 직접 친 코드보다 훨씬 빨리 늘어난다.
 
 사람은 raw reader에서 meaning evaluator로 이동한다.
 
-\newpage
+---
 
 여기서 raw layer란 가공되지 않은 정보층이다.
 
@@ -124,6 +124,10 @@ OCR text.
 이것들은 중요하다.
 
 중요하지 않아서 raw layer라고 부르는 것이 아니다.
+
+![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_1_68b54631ee.jpg)
+
+_Raw Layer를 읽지 않는 시대의 문제의식이 처음 모습을 드러내는 장면._
 
 오히려 매우 중요하다.
 
@@ -158,11 +162,7 @@ Git diff는 변경사항을 담고 있지만 맥락 없이 보면 의미가 잘 
 
 이런 작업은 LLM이 잘하는 일과 겹친다.
 
-![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_1_68b54631ee.jpg)
-
-_Raw Layer를 읽지 않는 시대의 문제의식이 처음 모습을 드러내는 장면._
-
-\newpage
+---
 
 AI는 raw layer를 semantic layer로 바꾼다.
 
@@ -221,7 +221,7 @@ AI가 해야 하는 좋은 일은 raw layer를 사람이 판단 가능한 semant
 
 그다음 판단은 사람의 일이다.
 
-\newpage
+---
 
 코드에서 이 변화가 특히 선명하다.
 
@@ -282,9 +282,13 @@ CSV를 변환한다.
 
 이걸 봐야 한다.
 
+![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_2_02ab95045c.jpg)
+
+_작업의 흐름이 구체적인 구조로 바뀌는 순간._
+
 모든 줄을 기계적으로 읽는 것보다, 코드의 행동과 위험을 이해하는 것이 더 중요해진다.
 
-\newpage
+---
 
 그렇다고 AI 코드를 믿어도 된다는 뜻은 아니다.
 
@@ -325,11 +329,7 @@ AI 시대의 코드 이해는 “내가 모든 줄을 손으로 썼는가”가 
 
 읽기의 초점을 바꾸는 것이다.
 
-![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_2_02ab95045c.jpg)
-
-_작업의 흐름이 구체적인 구조로 바뀌는 순간._
-
-\newpage
+---
 
 논문도 마찬가지다.
 
@@ -377,7 +377,7 @@ AI는 논문을 대신 믿어주는 존재가 아니다.
 
 AI는 어디를 읽어야 할지 먼저 알려주는 존재에 가깝다.
 
-\newpage
+---
 
 EMR에서도 이 관점은 중요하다.
 
@@ -413,6 +413,10 @@ follow-up이 필요한 문제.
 
 이런 식이다.
 
+![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_3_80f0aad68f.jpg)
+
+_사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
+
 하지만 여기서 경계가 중요하다.
 
 EMR 요약은 진료 판단이 아니다.
@@ -433,11 +437,7 @@ AI는 EMR을 읽는 부담을 줄일 수 있다.
 
 어디를 먼저 볼지, 어디를 반드시 확인할지 더 전략적으로 정한다는 뜻이다.
 
-![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_3_80f0aad68f.jpg)
-
-_사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
-
-\newpage
+---
 
 연구에서도 똑같다.
 
@@ -481,7 +481,7 @@ AI는 연구자의 눈을 대체하지 않는다.
 
 연구자가 봐야 할 곳을 좁혀준다.
 
-\newpage
+---
 
 그러면 사람이 직접 raw layer를 읽어야 하는 경우는 언제일까.
 
@@ -535,7 +535,7 @@ AI 요약은 탐색 도구다.
 
 최종 증거가 아니다.
 
-\newpage
+---
 
 그래서 “raw layer를 읽지 않는 시대”라는 말은 조심해서 써야 한다.
 
@@ -546,6 +546,10 @@ AI 요약은 탐색 도구다.
 사람이 모든 raw layer를 처음부터 끝까지 직접 읽는 것이 기본값이 아니게 된다.
 
 기본 workflow가 바뀐다.
+
+![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_31ec776670.jpg)
+
+_Raw Layer를 읽지 않는 시대의 결론을 이미지로 정리한 장면._
 
 먼저 AI가 raw layer를 1차로 읽는다.
 AI가 핵심 의미, 구조, 위험 후보를 추출한다.
@@ -565,11 +569,7 @@ AI가 핵심 의미, 구조, 위험 후보를 추출한다.
 
 지도만 보고 절벽을 건널 수는 없다.
 
-![](../output/cncbook_images/CNC_gpt_image_15_Pasted_Image_31ec776670.jpg)
-
-_Raw Layer를 읽지 않는 시대의 결론을 이미지로 정리한 장면._
-
-\newpage
+---
 
 이 변화는 문해력의 의미도 바꾼다.
 
@@ -604,7 +604,7 @@ AI가 만든 구조를 workflow로 바꾸는 능력.
 
 AI 시대의 문해력은 모든 줄을 읽는 능력이 아니라, 어디를 원문 확인해야 하는지 아는 능력이다.
 
-\newpage
+---
 
 이 관점은 내가 AI를 쓰는 방식과도 맞닿아 있다.
 
@@ -648,7 +648,7 @@ AI는 내 raw cognitive input을 semantic layer로 올려준다.
 
 이게 사람의 일이다.
 
-\newpage
+---
 
 결국 AI 시대에 읽기는 사라지지 않는다.
 

@@ -1,29 +1,120 @@
 \usepackage{fontspec}
-\setmainfont[
-  Path = fonts/KOPUBWORLD_TTF_FONTS2026/,
-  UprightFont = * Medium.ttf,
-  BoldFont = * Bold.ttf,
-  ItalicFont = * Light.ttf
-]{KoPubWorld Batang}
-\setsansfont[
-  Path = fonts/KOPUBWORLD_TTF_FONTS2026/,
-  UprightFont = * Medium.ttf,
-  BoldFont = * Bold.ttf,
-  ItalicFont = * Light.ttf
-]{KoPubWorld Dotum}
-\setmonofont[
-  Path = fonts/KOPUBWORLD_TTF_FONTS2026/,
-  UprightFont = * Medium.ttf,
-  BoldFont = * Bold.ttf,
-  ItalicFont = * Light.ttf
-]{KoPubWorld Dotum}
+\usepackage[a5paper,left=17mm,right=17mm,top=18mm,bottom=20mm,footskip=11mm]{geometry}
+\usepackage{xcolor}
+\definecolor{CNCText}{HTML}{22324A}
+\definecolor{CNCNavy}{HTML}{142C4C}
+\definecolor{CNCAccent}{HTML}{2B78B8}
+\definecolor{CNCMuted}{HTML}{7A8AA3}
+\IfFileExists{tmp/pdfs/fonts/KoPubWorld Batang Medium.ttf}{%
+  \setmainfont[
+    Path = tmp/pdfs/fonts/,
+    UprightFont = * Medium.ttf,
+    BoldFont = * Bold.ttf,
+    ItalicFont = * Light.ttf
+  ]{KoPubWorld Batang}
+  \setsansfont[
+    Path = tmp/pdfs/fonts/,
+    UprightFont = * Medium.ttf,
+    BoldFont = * Bold.ttf,
+    ItalicFont = * Light.ttf
+  ]{KoPubWorld Dotum}
+  \setmonofont[
+    Path = tmp/pdfs/fonts/,
+    UprightFont = * Medium.ttf,
+    BoldFont = * Bold.ttf,
+    ItalicFont = * Light.ttf
+  ]{KoPubWorld Dotum}
+}{%
+  \setmainfont[
+    Path = /System/Library/Fonts/Supplemental/,
+    UprightFont = AppleGothic.ttf,
+    BoldFont = AppleGothic.ttf,
+    ItalicFont = AppleGothic.ttf,
+    BoldFeatures = {FakeBold=1.5},
+    ItalicFeatures = {FakeSlant=0.2}
+  ]{AppleGothic}
+  \setsansfont[
+    Path = /System/Library/Fonts/Supplemental/,
+    UprightFont = AppleGothic.ttf,
+    BoldFont = AppleGothic.ttf,
+    ItalicFont = AppleGothic.ttf,
+    BoldFeatures = {FakeBold=1.5},
+    ItalicFeatures = {FakeSlant=0.2}
+  ]{AppleGothic}
+  \setmonofont[
+    Path = /System/Library/Fonts/Supplemental/,
+    UprightFont = AppleGothic.ttf,
+    BoldFont = AppleGothic.ttf,
+    ItalicFont = AppleGothic.ttf
+  ]{AppleGothic}
+}
 \usepackage{setspace}
-\setstretch{1.18}
-\setlength{\parskip}{0.65em}
+\setstretch{1.45}
+\setlength{\parskip}{0.62\baselineskip}
 \setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}%
+  {-3.2ex plus -1ex minus -.2ex}%
+  {2.0ex plus .2ex}%
+  {\sffamily\fontsize{20}{25}\selectfont\bfseries\color{CNCNavy}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{0pt}%
+  {-2.8ex plus -1ex minus -.2ex}%
+  {1.5ex plus .2ex}%
+  {\sffamily\fontsize{15}{20}\selectfont\bfseries\color{CNCNavy}}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{0pt}%
+  {-2.2ex plus -.8ex minus -.2ex}%
+  {1.0ex plus .2ex}%
+  {\sffamily\fontsize{11.5}{16}\selectfont\bfseries\color{CNCAccent}}}
+\makeatother
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\sffamily\fontsize{7.5}{9}\selectfont\color{CNCMuted}코니춘\enspace | \enspace\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\sffamily\fontsize{7.5}{9}\selectfont\color{CNCMuted}코니춘\enspace | \enspace\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
 \usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>.72\textheight .72\textheight\else\Gin@nat@height\fi}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 \makeatother
+
+\usepackage{float}
+\floatplacement{figure}{!htbp}
+\usepackage{caption}
+\captionsetup[figure]{%
+  labelformat=empty,
+  font={small,sf},
+  textfont={color=CNCMuted},
+  justification=centering,
+  singlelinecheck=false,
+  skip=6pt
+}
+\setlength{\textfloatsep}{1.0\baselineskip plus 2pt minus 2pt}
+\setlength{\floatsep}{1.0\baselineskip plus 2pt minus 2pt}
+\setlength{\intextsep}{1.0\baselineskip plus 2pt minus 2pt}
+
+\newcommand{\cncsectionbreak}{%
+  \par\addvspace{0.65\baselineskip}%
+  \noindent\hfill{\color{CNCAccent}\rule{18mm}{0.35pt}}\hfill\mbox{}\par%
+  \addvspace{0.45\baselineskip}%
+}
+
+\AtBeginDocument{%
+  \color{CNCText}%
+  \thispagestyle{empty}%
+}

@@ -14,8 +14,35 @@ REFERENCE_DOC="$BASE_DIR/user/의공모.docx"
 PAGEBREAK_FILTER="$BASE_DIR/00_management/scripts/cncbook_pagebreak.lua"
 PDF_HEADER="$BASE_DIR/00_management/cncbook_pdf_header.tex"
 PDF_SANITIZE_FILTER="$BASE_DIR/00_management/scripts/cncbook_pdf_sanitize.lua"
+PDF_LAYOUT_FILTER="$BASE_DIR/00_management/scripts/cncbook_pdf_layout.lua"
+PDF_FONT_DIR="$TMP_DIR/fonts"
 SKIP_PDF=0
 PDF_MODE="xelatex"
+
+prepare_pdf_fonts() {
+  local bundled_font_dir="${CNCBOOK_FONT_DIR:-$BASE_DIR/fonts/KOPUBWORLD_TTF_FONTS2026}"
+  local fonts=(
+    "KoPubWorld Batang Medium.ttf"
+    "KoPubWorld Batang Bold.ttf"
+    "KoPubWorld Batang Light.ttf"
+    "KoPubWorld Dotum Medium.ttf"
+    "KoPubWorld Dotum Bold.ttf"
+    "KoPubWorld Dotum Light.ttf"
+  )
+  local font
+
+  for font in "${fonts[@]}"; do
+    if [[ ! -f "$bundled_font_dir/$font" ]]; then
+      echo "KoPubWorld TTF를 찾지 못해 AppleGothic 대체 글꼴을 사용합니다."
+      return 0
+    fi
+  done
+
+  mkdir -p "$PDF_FONT_DIR"
+  for font in "${fonts[@]}"; do
+    cp -f "$bundled_font_dir/$font" "$PDF_FONT_DIR/$font"
+  done
+}
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -36,6 +63,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 mkdir -p "$OUTPUT_DIR" "$TMP_DIR"
+cd "$BASE_DIR"
 
 echo "1. CNCbook Markdown 산출물 생성 중..."
 python3 "$BASE_DIR/00_management/scripts/build_cncbook.py" build
@@ -84,13 +112,15 @@ if [[ "$PDF_MODE" == "xelatex" ]]; then
   fi
 
   echo "4. XeLaTeX로 CNCbook PDF 생성 중..."
+  prepare_pdf_fonts
   pandoc \
     "${PANDOC_COMMON_ARGS[@]}" \
     --lua-filter="$PDF_SANITIZE_FILTER" \
+    --lua-filter="$PDF_LAYOUT_FILTER" \
     --pdf-engine=xelatex \
     -H "$PDF_HEADER" \
     -V papersize:a5 \
-    -V geometry:margin=20mm \
+    -V fontsize=10pt \
     -o "$PDF_OUT"
 
   echo "CNCbook 빌드 완료!"

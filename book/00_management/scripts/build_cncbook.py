@@ -275,25 +275,14 @@ def remove_internal_sections(content: str, remove_sections: list[str]) -> str:
 
 
 def normalize_separators(content: str) -> str:
-    sections = re.split(r"(?m)^\s*---\s*$", content)
-    if len(sections) == 1:
-        return compact_page_breaks(content)
+    """Preserve manuscript scene breaks without turning them into page breaks.
 
-    blocks: list[str] = []
-    for index, section in enumerate(sections):
-        text = section.strip()
-        if text:
-            blocks.append(text)
-        if index >= len(sections) - 1:
-            continue
-
-        next_text = sections[index + 1].strip()
-        if visible_char_count(text) >= 180 and visible_char_count(next_text) >= 180:
-            blocks.append(PAGE_BREAK)
-        else:
-            blocks.append("")
-
-    return compact_page_breaks("\n\n".join(block for block in blocks if block is not None))
+    Pagination belongs to the assembled book structure (cover, parts, and
+    chapters). Internal ``---`` markers are thematic breaks inside a chapter.
+    """
+    content = re.sub(r"(?m)^\s*---\s*$", "\n\n---\n\n", content)
+    content = re.sub(r"\n{5,}", "\n\n\n\n", content)
+    return compact_page_breaks(content)
 
 
 def compact_page_breaks(content: str) -> str:
@@ -966,7 +955,8 @@ def build(data: dict[str, Any]) -> tuple[list[ChapterResult], list[str]]:
             )
         )
 
-    book_text = "\n".join(book_blocks).strip() + "\n"
+    assembled_blocks = [block.strip() for block in book_blocks if block.strip()]
+    book_text = compact_page_breaks("\n\n".join(assembled_blocks)).strip() + "\n"
     (manuscript_dir / "book.md").write_text(book_text, encoding="utf-8")
     output_file = output_markdown_file(data)
     if output_file is not None:

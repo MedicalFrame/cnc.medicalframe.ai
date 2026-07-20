@@ -46,7 +46,7 @@ LLM은 왕이 아니었다.
 
 LLM은 adapter였다.
 
-\newpage
+---
 
 이 생각이 선명해진 건 Whisper API를 공부하면서였다.
 
@@ -135,11 +135,15 @@ EMR에서 뽑아야 할 변수 후보로 바꾼다.
 
 사람 언어와 기계 언어 사이를 번역하고 있다.
 
-\newpage
+---
 
 현대의 많은 것은 텍스트로 연결된다.
 
 이 말이 처음에는 조금 추상적으로 들릴 수 있다.
+
+![](../output/cncbook_images/CNC_gpt_image_14_1_5744de6cd0.jpg)
+
+_LLM은 왕이 아니라 Adapter다의 문제의식이 처음 모습을 드러내는 장면._
 
 하지만 내가 실제로 쓰는 작업들을 보면 그렇다.
 
@@ -210,11 +214,7 @@ publish status.
 
 그리고 LLM은 그 bus 위에서 의미를 바꿔 끼우는 adapter다.
 
-![](../output/cncbook_images/CNC_gpt_image_14_1_5744de6cd0.jpg)
-
-_LLM은 왕이 아니라 Adapter다의 문제의식이 처음 모습을 드러내는 장면._
-
-\newpage
+---
 
 adapter는 원래 서로 맞지 않는 것을 연결한다.
 
@@ -253,7 +253,7 @@ LLM은 단순히 예쁜 문장을 만드는 도구가 아니다.
 구조화된 정보를 다른 형식으로 변환하고,
 사람의 의도를 기계가 처리 가능한 형태에 가깝게 옮기는 도구다.
 
-\newpage
+---
 
 예를 들어 내가 ChatGPT와 한참 이야기한다.
 
@@ -291,11 +291,15 @@ markdown을 챕터 카드로 바꾼다.
 
 이게 adapter다.
 
-\newpage
+---
 
 Codex 작업지시문을 만들 때도 이 감각이 강하다.
 
 나는 처음부터 Codex에게 바로 말하지 않는다.
+
+![](../output/cncbook_images/CNC_gpt_image_14_2_1db8ff6735.jpg)
+
+_작업의 흐름이 구체적인 구조로 바뀌는 순간._
 
 먼저 ChatGPT와 이야기한다.
 
@@ -337,11 +341,7 @@ Codex는 repository 안에서 움직이는 시공팀이다.
 
 사람 언어를 작업 언어로 바꾸는 중간층이 생기는 것이다.
 
-![](../output/cncbook_images/CNC_gpt_image_14_2_1db8ff6735.jpg)
-
-_작업의 흐름이 구체적인 구조로 바뀌는 순간._
-
-\newpage
+---
 
 Whisper API도 같은 맥락으로 보인다.
 
@@ -400,7 +400,7 @@ LLM도 그렇다.
 
 하지만 이상할 정도로 많은 형식 사이에 끼어들 수 있다.
 
-\newpage
+---
 
 의료와 EMR에서는 이 관점이 더 중요해진다.
 
@@ -454,15 +454,15 @@ LLM은 cognitive preprocessing을 한다.
 무엇이 위험 신호인지,
 이 정보를 실제 진료에 어떻게 반영할지는 사람이 봐야 한다.
 
-LLM은 EMR과 의사 사이의 adapter가 될 수 있다.
-
-하지만 의사의 책임을 대체할 수는 없다.
-
 ![](../output/cncbook_images/CNC_gpt_image_14_3_8b24dab795.jpg)
 
 _사람의 판단과 AI의 실행이 나뉘는 지점을 보여주는 장면._
 
-\newpage
+LLM은 EMR과 의사 사이의 adapter가 될 수 있다.
+
+하지만 의사의 책임을 대체할 수는 없다.
+
+---
 
 연구에서도 마찬가지다.
 
@@ -507,7 +507,7 @@ LLM은 연구 workflow의 adapter가 될 수 있다.
 
 하지만 연구의 판단자는 아니다.
 
-\newpage
+---
 
 LLM과 tool이 연결되면 이 힘은 더 커진다.
 
@@ -568,7 +568,7 @@ tool은 정확한 입력을 요구한다.
 
 LLM은 그 사이를 번역한다.
 
-\newpage
+---
 
 하지만 adapter는 위험할 수도 있다.
 
@@ -594,6 +594,10 @@ LLM이 중간에서 너무 자연스럽게 바꿔주면, 사람은 착각하기 
 
 “AI가 정리했으니 맞겠지.”
 
+![](../output/cncbook_images/CNC_gpt_image_14_4_278870844c.jpg)
+
+_LLM은 왕이 아니라 Adapter다의 결론을 이미지로 정리한 장면._
+
 하지만 아니다.
 
 LLM은 adapter다.
@@ -618,11 +622,7 @@ LLM은 강력한 adapter다.
 
 강력하기 때문에 검증 구조가 필요하다.
 
-![](../output/cncbook_images/CNC_gpt_image_14_4_278870844c.jpg)
-
-_LLM은 왕이 아니라 Adapter다의 결론을 이미지로 정리한 장면._
-
-\newpage
+---
 
 그래서 LLM을 universal adapter로 본다는 것은 LLM을 숭배하자는 말이 아니다.
 
@@ -667,7 +667,7 @@ tool이나 API가 실제 처리를 맡을 부분을 나눈다.
 
 이것이 builder의 일이다.
 
-\newpage
+---
 
 나에게 이 관점이 중요한 이유도 여기에 있다.
 
@@ -722,7 +722,7 @@ AI와의 대화는 lessons.md가 된다.
 답을 주는 존재라기보다,
 형식을 건너게 해주는 존재다.
 
-\newpage
+---
 
 LLM은 글쓰기 도구가 아니다.
 

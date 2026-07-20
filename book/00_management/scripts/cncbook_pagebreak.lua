@@ -4,7 +4,7 @@ function RawBlock(el)
   end
 
   if FORMAT:match("latex") or FORMAT:match("beamer") then
-    return el
+    return pandoc.RawBlock("tex", "\\clearpage")
   end
 
   if FORMAT:match("docx") then
